@@ -26,7 +26,7 @@
 ### 👨‍💻 Group Members
 
 | PRN | Name | 
-|---|---|---|
+|---|---|
 | 23070122175 | Deepak Rathod |
 | 23070122189 | Samartha Shrestha |
 | 24070122508 | Atharva More |
