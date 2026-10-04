@@ -25,7 +25,7 @@
 
 ### 👨‍💻 Group Members
 
-| PRN | Name | Role |
+| PRN | Name |
 |---|---|
 | 23070122175 | Deepak Rathod |
 | 23070122189 | Samartha Shrestha |
@@ -332,21 +332,4 @@ Visit **http://127.0.0.1:8000** 🎉
 
 ---
 
-## 📅 Submission Details
 
-| Item | Detail |
-|---|---|
-| **GitHub Repo** | https://github.com/AtharvaMore9388/Devops-CA2_2023-27 |
-| **Submission Deadline** | 5th October 2026 |
-| **Google Sheet Filled** | ✅ Yes |
-| **Group Number** | 13 |
-
----
-
-<div align="center">
-
-**DevOps CA2 | Group 13 | Batch 2023–27**
-
-Made with ❤️ by Deepak Rathod · Samartha Shrestha · Atharva More · Sonali Gupta
-
-</div>
