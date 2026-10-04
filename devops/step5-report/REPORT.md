@@ -63,6 +63,8 @@ Reason: Free, native GitHub integration, YAML-based, secrets management built-in
 
 **Workflow file:** `.github/workflows/ci-cd.yml`
 
+![GitHub Actions CI/CD Pipeline Run](../step1-github-actions/github-actions-success.png)
+
 ---
 
 ## Slide 3: Configuration Management & IaC (Step 2 — Ansible)

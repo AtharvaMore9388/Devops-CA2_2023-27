@@ -59,8 +59,9 @@ Devops-CA2_2023-27/
 │
 ├── 📁 devops/                              ← All DevOps CA2 deliverables
 │   ├── 📁 step1-github-actions/
-│   │   └── .github/workflows/
-│   │       └── ci-cd.yml                  ← Step 1: CI/CD Pipeline
+│   │   ├── .github/workflows/
+│   │   │   └── ci-cd.yml                  ← Step 1: CI/CD Pipeline
+│   │   └── github-actions-success.png     ← CI/CD Pipeline Execution Proof
 │   │
 │   ├── 📁 step2-ansible/
 │   │   ├── playbook.yml                   ← Step 2: Ansible Playbook
@@ -143,6 +144,11 @@ Push to main
 | Rollback | kubectl rollout undo | Auto-rollback if deployment fails |
 
 **Why GitHub Actions?** Free, native GitHub integration, YAML-based, secrets management built-in.
+
+### 📸 Pipeline Execution Proof
+*Successful end-to-end execution of all 3 stages (Lint & Test, Build & Push Docker Image, and Deploy to Kubernetes) with zero downtime.*
+
+![GitHub Actions CI/CD Pipeline Run](devops/step1-github-actions/github-actions-success.png)
 
 ---
 
