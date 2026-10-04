@@ -26,11 +26,11 @@
 ### 👨‍💻 Group Members
 
 | PRN | Name | Role |
-|---|---|---|
-| 23070122175 | Deepak Rathod | DevOps & Deployment |
-| 23070122189 | Samartha Shrestha | Containerization & Orchestration |
-| 24070122508 | Atharva More | ML Pipeline & Django App |
-| 23070122266 | Sonali Gupta | Monitoring & Documentation |
+|---|---|
+| 23070122175 | Deepak Rathod |
+| 23070122189 | Samartha Shrestha |
+| 24070122508 | Atharva More |
+| 23070122266 | Sonali Gupta |
 
 ---
 
