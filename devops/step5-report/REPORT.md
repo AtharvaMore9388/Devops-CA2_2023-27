@@ -145,6 +145,9 @@ docker compose -f step4-monitoring/docker-compose.monitoring.yml up -d
 4. Error Rate — 4xx/5xx per second
 5. CPU & Memory — host utilization gauges
 6. Total Predictions — business metric counter
+ 
+![Docker Monitoring Stack](../step4-monitoring/docker-monitoring-stack.png)
+![Grafana Node Exporter Metrics Dashboard](../step4-monitoring/grafana-metrics-dashboard.png)
 
 ### Challenges & Solutions
 

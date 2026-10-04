@@ -78,6 +78,8 @@ Devops-CA2_2023-27/
 │   ├── 📁 step4-monitoring/
 │   │   ├── docker-compose.monitoring.yml  ← Step 4: Monitoring stack
 │   │   ├── prometheus.yml                 ← Prometheus scrape config
+│   │   ├── docker-monitoring-stack.png    ← Docker Desktop Containers Proof
+│   │   ├── grafana-metrics-dashboard.png  ← Grafana Dashboard Metrics Proof
 │   │   ├── grafana-dashboards/
 │   │   │   └── deepfake-dashboard.json    ← Grafana dashboard (8 panels)
 │   │   └── grafana-provisioning/          ← Auto-provisioning configs
@@ -267,6 +269,18 @@ docker compose -f docker-compose.monitoring.yml up -d
 6. 🧠 **Memory Usage** — Host memory gauge (0–100%)
 7. 🔢 **Total Predictions** — Business metric counter
 8. 🗄️ **DB Query Rate** — Django database operations/s
+
+### 📸 Monitoring Proof & Dashboards
+
+#### 1. Docker Desktop — Active Monitoring Stack
+*All four monitoring containers (`grafana`, `prometheus`, `node-exporter`, and `cadvisor`) running healthy via Docker Compose.*
+
+![Docker Monitoring Stack](devops/step4-monitoring/docker-monitoring-stack.png)
+
+#### 2. Grafana — Live Node Exporter Metrics Dashboard
+*Real-time dashboard on `localhost:3000` showing host CPU busy rate (91.8%), system load, RAM usage (12.2%), swap usage, core counts, and network/memory usage graphs.*
+
+![Grafana Node Exporter Metrics Dashboard](devops/step4-monitoring/grafana-metrics-dashboard.png)
 
 ---
 
