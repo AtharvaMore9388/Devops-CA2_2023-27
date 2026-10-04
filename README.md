@@ -81,8 +81,11 @@ Devops-CA2_2023-27/
 │   │   │   └── deepfake-dashboard.json    ← Grafana dashboard (8 panels)
 │   │   └── grafana-provisioning/          ← Auto-provisioning configs
 │   │
-│   └── 📁 step5-report/
-│       └── REPORT.md                      ← Step 5: Reflection & Report
+│   ├── 📁 step5-report/
+│   │   └── REPORT.md                      ← Step 5: Reflection & Report
+│   │
+│   └── 📁 step6-bonus/
+│       └── *.png                          ← Submission Screenshots & Proof
 │
 ├── 📁 reconstruction/                      ← MAE face reconstruction module
 │   ├── __init__.py
@@ -273,6 +276,53 @@ The report covers:
 - 📊 **Monitoring** — Prometheus metrics + Grafana dashboard setup
 - ⚠️ **Challenges** — Problems faced and how they were solved
 - 💡 **Lessons Learned** — Key takeaways from the DevOps implementation
+
+---
+
+## 🏆 Step 6 — Bonus: External DevOps & AI Challenge Participation
+
+**Hackathon Link:** [Multimodal AI Hackathon 2026 (Devpost)](https://multimodal-ai-hackathon-2026-7.devpost.com/)  
+**Submission Proof Assets:** [`devops/step6-bonus/`](devops/step6-bonus/)
+
+> **Requirement:** Participate in an external DevOps challenge (Kaggle/Devpost/Cloud hackathon). Attach proof of submission/leaderboard or GitHub PR badge.
+
+### 🎯 Challenge & Submission Overview
+
+| Field | Details |
+|---|---|
+| **Platform** | **Devpost** |
+| **Hackathon** | [**Multimodal AI Hackathon 2026**](https://multimodal-ai-hackathon-2026-7.devpost.com/) |
+| **Organizer** | Kamand Prompt, IIT Mandi |
+| **Project Title** | **StudyBuddy — Source-Grounded AI Tutor with Adaptive Quizzes** |
+| **Category** | Machine Learning / AI / DevOps Deployment |
+| **Submission Status** | 🟢 **SUBMITTED** (5/5 steps completed) |
+| **Participants (Group 13)** | **Atharva More**, **Deepak Rathod**, **Samartha Shrestha**, **Sonali Gupta** |
+
+### 👥 Team Members (Group 13)
+
+| PRN | Name | Devpost Handle |
+|---|---|---|
+| 24070122508 | Atharva More | `@atharvamore391` |
+| 23070122175 | Deepak Rathod | `@deepak-rathod7385` |
+| 23070122189 | Samartha Shrestha | `@samartha-shrestha` |
+| 23070122266 | Sonali Gupta | `@sonaligupta1147` |
+
+### 📸 Proof of Participation & Submission
+
+#### 1. Devpost Hackathon Overview & Registration
+*Registration and project participation at the Multimodal AI Hackathon 2026 organized by Kamand Prompt, IIT Mandi.*
+
+![Devpost Hackathon Overview](devops/step6-bonus/hackathon-overview.png)
+
+#### 2. Project Dashboard & "SUBMITTED" Status
+*Project card for **StudyBuddy** showing the verified **SUBMITTED** status badge and team roster.*
+
+![Devpost Submission Project Card](devops/step6-bonus/submission-project-card.png)
+
+#### 3. Step-by-Step Submission & Team Verification
+*Official Devpost submission confirmation showing 5/5 steps completed (`✔ Project submitted!`) and all four CA2 group members registered.*
+
+![Devpost Submission Confirmation](devops/step6-bonus/submission-confirmation.png)
 
 ---
 

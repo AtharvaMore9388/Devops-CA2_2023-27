@@ -163,3 +163,16 @@ docker compose -f step4-monitoring/docker-compose.monitoring.yml up -d
 - GitHub Actions secrets management is simpler than managing external CI credentials
 
 ---
+
+## Slide 6: Step 6 — Bonus (External DevOps & AI Hackathon)
+
+### 🏆 Challenge Participation
+- **Platform:** [Devpost](https://devpost.com/)
+- **Hackathon:** [Multimodal AI Hackathon 2026](https://multimodal-ai-hackathon-2026-7.devpost.com/) (Kamand Prompt, IIT Mandi)
+- **Project:** **StudyBuddy — Source-Grounded AI Tutor with Adaptive Quizzes**
+- **Status:** **SUBMITTED** (5/5 steps completed)
+- **Team (Group 13):** Atharva More, Deepak Rathod, Samartha Shrestha, Sonali Gupta
+- **Deliverables & Proof:** Full documentation and submission screenshots available in [`devops/step6-bonus/`](../step6-bonus/)
+
+---
+
