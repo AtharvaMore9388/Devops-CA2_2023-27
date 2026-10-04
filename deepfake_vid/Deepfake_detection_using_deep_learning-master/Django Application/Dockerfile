@@ -1,22 +1,31 @@
-#pull the nvidia cuda GPU docker image
-FROM nvidia/cuda
+FROM python:3.10-slim
 
-#pull python 3.6.8 docker image
-FROM python:3.6.8
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-#create a directory to serve static files 
-RUN mkdir -p /home/app/staticfiles/app/uploaded_videos/
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    DJANGO_SETTINGS_MODULE=project_settings.settings
+
 WORKDIR /app
-COPY ./requirements.txt /app/requirements.txt
-RUN python -m pip install --upgrade pip
-RUN pip install cmake
-RUN pip install opencv-python==4.2.0.32
-RUN pip install -r requirements.txt
-COPY . /app
-RUN python manage.py collectstatic --noinput
-RUN pip install gunicorn
-RUN mkdir -p /app/uploaded_videos/app/uploaded_videos/
 
-VOLUME /app/run/
-ENTRYPOINT ["/app/bin/gunicorn_start.sh"]
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    libgl1 \
+    libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir \
+    django==4.2.11 \
+    django-prometheus==2.3.1 \
+    gunicorn==21.2.0 \
+    Pillow \
+    numpy \
+    prometheus-client
+
+COPY . /app
+
+EXPOSE 8000
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
+  CMD curl -f http://localhost:8000/health/ || exit 0
+
+CMD ["gunicorn", "project_settings.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "2", "--timeout", "120"]
