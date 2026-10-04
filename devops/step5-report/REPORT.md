@@ -146,6 +146,7 @@ docker compose -f step4-monitoring/docker-compose.monitoring.yml up -d
 5. CPU & Memory — host utilization gauges
 6. Total Predictions — business metric counter
  
+![Docker Compose Up Terminal](../step4-monitoring/docker-compose-up-terminal.png)
 ![Docker Monitoring Stack](../step4-monitoring/docker-monitoring-stack.png)
 ![Grafana Node Exporter Metrics Dashboard](../step4-monitoring/grafana-metrics-dashboard.png)
 

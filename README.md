@@ -78,6 +78,7 @@ Devops-CA2_2023-27/
 │   ├── 📁 step4-monitoring/
 │   │   ├── docker-compose.monitoring.yml  ← Step 4: Monitoring stack
 │   │   ├── prometheus.yml                 ← Prometheus scrape config
+│   │   ├── docker-compose-up-terminal.png ← Terminal Compose Up Proof
 │   │   ├── docker-monitoring-stack.png    ← Docker Desktop Containers Proof
 │   │   ├── grafana-metrics-dashboard.png  ← Grafana Dashboard Metrics Proof
 │   │   ├── grafana-dashboards/
@@ -272,12 +273,17 @@ docker compose -f docker-compose.monitoring.yml up -d
 
 ### 📸 Monitoring Proof & Dashboards
 
-#### 1. Docker Desktop — Active Monitoring Stack
+#### 1. CLI Execution — Docker Compose Stack Launch
+*Terminal output showing successful pull and creation of all networks, volumes, and containers (`cadvisor`, `node-exporter`, `prometheus`, `grafana`).*
+
+![Docker Compose Up Terminal](devops/step4-monitoring/docker-compose-up-terminal.png)
+
+#### 2. Docker Desktop — Active Monitoring Stack
 *All four monitoring containers (`grafana`, `prometheus`, `node-exporter`, and `cadvisor`) running healthy via Docker Compose.*
 
 ![Docker Monitoring Stack](devops/step4-monitoring/docker-monitoring-stack.png)
 
-#### 2. Grafana — Live Node Exporter Metrics Dashboard
+#### 3. Grafana — Live Node Exporter Metrics Dashboard
 *Real-time dashboard on `localhost:3000` showing host CPU busy rate (91.8%), system load, RAM usage (12.2%), swap usage, core counts, and network/memory usage graphs.*
 
 ![Grafana Node Exporter Metrics Dashboard](devops/step4-monitoring/grafana-metrics-dashboard.png)
